@@ -13,6 +13,8 @@
 		1C508A94255135CC001D953F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C508A93255135CC001D953F /* Preview Assets.xcassets */; };
 		1C508A96255135CC001D953F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C508A95255135CC001D953F /* Persistence.swift */; };
 		1C508A99255135CC001D953F /* Expirapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C508A97255135CC001D953F /* Expirapp.xcdatamodeld */; };
+		1C508AA325524AEA001D953F /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C508AA125524AEA001D953F /* Product+CoreDataClass.swift */; };
+		1C508AA425524AEA001D953F /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C508AA225524AEA001D953F /* Product+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1C508A95255135CC001D953F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1C508A98255135CC001D953F /* Expirapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Expirapp.xcdatamodel; sourceTree = "<group>"; };
 		1C508A9A255135CD001D953F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C508AA125524AEA001D953F /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1C508AA225524AEA001D953F /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		1C508A80255135AF001D953F = {
 			isa = PBXGroup;
 			children = (
+				1C508AA125524AEA001D953F /* Product+CoreDataClass.swift */,
+				1C508AA225524AEA001D953F /* Product+CoreDataProperties.swift */,
 				1C508A8B255135AF001D953F /* Expirapp */,
 				1C508A8A255135AF001D953F /* Products */,
 			);
@@ -146,7 +152,9 @@
 			files = (
 				1C508A96255135CC001D953F /* Persistence.swift in Sources */,
 				1C508A8F255135B0001D953F /* ContentView.swift in Sources */,
+				1C508AA425524AEA001D953F /* Product+CoreDataProperties.swift in Sources */,
 				1C508A99255135CC001D953F /* Expirapp.xcdatamodeld in Sources */,
+				1C508AA325524AEA001D953F /* Product+CoreDataClass.swift in Sources */,
 				1C508A8D255135B0001D953F /* ExpirappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
