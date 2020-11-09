@@ -1,0 +1,6 @@
+framework module Pods_Expirapp {
+  umbrella header "Pods-Expirapp-umbrella.h"
+
+  export *
+  module * { export * }
+}

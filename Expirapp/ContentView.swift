@@ -12,6 +12,7 @@ struct ContentView: View {
         NavigationView {
             List {
                 Text("Banana")
+                Text("Carne de res")	
             }
             .navigationBarItems(trailing: Button(action: {
                     print("Open order sheet")

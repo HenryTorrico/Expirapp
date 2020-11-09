@@ -15,6 +15,7 @@
 		1C508A99255135CC001D953F /* Expirapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C508A97255135CC001D953F /* Expirapp.xcdatamodeld */; };
 		1C508AA325524AEA001D953F /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C508AA125524AEA001D953F /* Product+CoreDataClass.swift */; };
 		1C508AA425524AEA001D953F /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C508AA225524AEA001D953F /* Product+CoreDataProperties.swift */; };
+		61A0D03FD0798EC5DD0CEF89 /* Pods_Expirapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379AC238E7CDC6EB645852D7 /* Pods_Expirapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		1C508A9A255135CD001D953F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C508AA125524AEA001D953F /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1C508AA225524AEA001D953F /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		379AC238E7CDC6EB645852D7 /* Pods_Expirapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expirapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B21642D66E4DB420528D1B /* Pods-Expirapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expirapp.debug.xcconfig"; path = "Target Support Files/Pods-Expirapp/Pods-Expirapp.debug.xcconfig"; sourceTree = "<group>"; };
+		FCB10AD84DF0FF714CDD35D9 /* Pods-Expirapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expirapp.release.xcconfig"; path = "Target Support Files/Pods-Expirapp/Pods-Expirapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A0D03FD0798EC5DD0CEF89 /* Pods_Expirapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 				1C508AA225524AEA001D953F /* Product+CoreDataProperties.swift */,
 				1C508A8B255135AF001D953F /* Expirapp */,
 				1C508A8A255135AF001D953F /* Products */,
+				742A13B9CF9269A5264D55A4 /* Pods */,
+				F50D8D797148337B1E556B1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +88,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		742A13B9CF9269A5264D55A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1B21642D66E4DB420528D1B /* Pods-Expirapp.debug.xcconfig */,
+				FCB10AD84DF0FF714CDD35D9 /* Pods-Expirapp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F50D8D797148337B1E556B1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379AC238E7CDC6EB645852D7 /* Pods_Expirapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C508A9D255135CD001D953F /* Build configuration list for PBXNativeTarget "Expirapp" */;
 			buildPhases = (
+				B405FA9C8E4E70949B1FFED1 /* [CP] Check Pods Manifest.lock */,
 				1C508A85255135AF001D953F /* Sources */,
 				1C508A86255135AF001D953F /* Frameworks */,
 				1C508A87255135AF001D953F /* Resources */,
@@ -144,6 +170,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B405FA9C8E4E70949B1FFED1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Expirapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C508A85255135AF001D953F /* Sources */ = {
@@ -280,6 +331,7 @@
 		};
 		1C508A9E255135CD001D953F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B21642D66E4DB420528D1B /* Pods-Expirapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +353,7 @@
 		};
 		1C508A9F255135CD001D953F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCB10AD84DF0FF714CDD35D9 /* Pods-Expirapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
